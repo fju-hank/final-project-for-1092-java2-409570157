@@ -1,2 +1,6 @@
 com/fju/Tester.java
  com.fju.Tester
+com/fju/Turtle.java
+ com.fju.Turtle
+com/fju/Rabbit.java
+ com.fju.Rabbit
