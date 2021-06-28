@@ -1,6 +1,6 @@
 package com.fju;
 
-public class Turtle implements Runnable{
+public class Tortoise implements Runnable{
     @Override
     public void run() {
         for (int i = 0; i < 1000; i++) {
