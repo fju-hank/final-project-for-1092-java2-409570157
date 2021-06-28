@@ -7,15 +7,22 @@ public class Tester {
         //Import the horse racing code, which is what I coded when the teacher was teaching.
         // Rewrite.
         Rabbit r1 = new Rabbit();
-            Tortoise t1 = new Tortoise();
-            r1.start();
-            t1.run();
-            //Add FileReader
-        FileOutputStream fos= new FileOutputStream("File.txt");
-        OutputStreamWriter osw = new OutputStreamWriter(fos);
-        osw.close();
-        InputStreamReader isr = new InputStreamReader(new FileInputStream("File.txt"));
+        Tortoise t1 = new Tortoise();
+        r1.start();
+        t1.run();
+
+
+        //Add FileReader
+        FileInputStream fis = new FileInputStream("File.txt");
+        InputStreamReader isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
-        System.out.println(br.readLine());
-        }}
+        String s;
+        while((s = br.readLine())!= null) {
+            System.out.println(s);
+        }
+            br.close();
+            isr.close();
+            fis.close();
+        }
+    }
 
